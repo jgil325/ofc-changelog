@@ -1,5 +1,16 @@
 [
   {
+    "id": "scoop-hold-and-return",
+    "date": "2026-11-17",
+    "releasedAt": "2026-11-17T22:35:22Z",
+    "title": "More time to read your scoop",
+    "category": "Fixes",
+    "summary": "The SCOOP! text holds for one second. If a hand ends while you’re away, the celebration plays when you return to its Next hand screen.",
+    "notes": ["Watching or skipping the celebration clears it for that hand."],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
     "id": "scoop-wins-by-foul",
     "date": "2026-11-17",
     "releasedAt": "2026-11-17T20:58:17Z",
