@@ -194,7 +194,7 @@ html {
   padding-block: 65px 72px;
 }
 .hero-scene {
-  --deal-duration: 8s;
+  --deal-duration: 6.4s;
   --deal-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --deal-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   position: relative;
@@ -229,92 +229,238 @@ html {
 }
 .hero-slot--left {
   --deal-delay: 0ms;
-  --card-layer: 1;
-  --fan-pose: translate(-37%, -29%) rotate(-20deg) scale(1.44);
+  --card-layer: 3;
+  --approach-x: -112%;
+  --peel-x: -23%;
+  --flight-x: -68%;
+  --lean: -17deg;
   grid-column: 2;
 }
 .hero-slot--center {
-  --deal-delay: 160ms;
-  --card-layer: 2;
-  --fan-pose: translate(-1%, -44%) rotate(-6deg) scale(1.5);
+  --deal-delay: 300ms;
+  --card-layer: 4;
+  --approach-x: -38%;
+  --peel-x: 3%;
+  --flight-x: 39%;
+  --lean: 12deg;
 }
 .hero-slot--right {
-  --deal-delay: 320ms;
-  --card-layer: 3;
-  --fan-pose: translate(41%, -23%) rotate(18deg) scale(1.44);
+  --deal-delay: 600ms;
+  --card-layer: 5;
+  --approach-x: 112%;
+  --peel-x: 25%;
+  --flight-x: 68%;
+  --lean: 20deg;
 }
 .hero-card {
   position: absolute;
   z-index: var(--card-layer);
   inset: -1px;
-  width: calc(100% + 2px);
-  height: auto;
+}
+.hero-card > img {
   display: block;
+  width: 100%;
+  height: 100%;
   border: 1px solid #d3d6db;
   border-radius: 5.6% / 4%;
   box-shadow: 0 8px 20px #0007;
 }
+.hero-card-peel {
+  position: absolute;
+  /* Each sprite frame pads a 160 × 224 face by 54px horizontally and 100px vertically. */
+  inset: -44.6429% -33.75%;
+  overflow: hidden;
+  filter: drop-shadow(0 8px 8px #0009);
+  visibility: hidden;
+}
+.hero-card-peel img {
+  display: block;
+  width: 2500%;
+  height: 100%;
+  max-width: none;
+}
+.hero-scene.is-animated .hero-card-peel {
+  visibility: visible;
+}
 .hero-scene.is-animated .hero-card {
-  animation: hero-deal var(--deal-duration) linear var(--deal-delay) infinite
+  animation: hero-flight var(--deal-duration) linear var(--deal-delay) infinite
     both;
 }
-.hero-slot:has(.hero-card)::before {
+.hero-scene.is-animated .hero-card > img {
+  animation: hero-face var(--deal-duration) step-end var(--deal-delay) infinite
+    both;
+}
+.hero-scene.is-animated .hero-card-peel img {
+  animation: hero-peel var(--deal-duration) linear var(--deal-delay) infinite
+    both;
+}
+.hero-slot:has(.hero-card)::before,
+.hero-slot:has(.hero-card)::after,
+.hero-board::after {
   position: absolute;
-  inset: -3px;
-  border: 1px solid var(--gold);
-  border-radius: 8px;
-  box-shadow: 0 0 18px #ffc72c4d;
+  pointer-events: none;
   opacity: 0;
   content: "";
 }
-.hero-scene.is-animated .hero-slot:has(.hero-card)::before {
-  animation: hero-slot-lit var(--deal-duration) linear var(--deal-delay)
-    infinite both;
+.hero-slot:has(.hero-card)::before {
+  inset: -4px;
+  z-index: 2;
+  border: 2px solid var(--gold);
+  border-radius: 7px;
+  box-shadow:
+    0 0 19px #ffc72cba,
+    inset 0 0 14px #ffc72c6e;
 }
-@keyframes hero-deal {
+.hero-slot:has(.hero-card)::after {
+  inset: -48%;
+  z-index: 1;
+  background:
+    radial-gradient(circle 2px at 12% 30%, #ffe6a2 55%, transparent 100%),
+    radial-gradient(circle 2px at 81% 17%, #ffc72c 55%, transparent 100%),
+    radial-gradient(circle 3px at 92% 49%, #ffe6a2 55%, transparent 100%),
+    radial-gradient(circle 2px at 11% 63%, #ffc72c 55%, transparent 100%),
+    radial-gradient(circle 2px at 25% 83%, #ffe6a2 55%, transparent 100%),
+    radial-gradient(circle 2px at 82% 74%, #ffc72c 55%, transparent 100%),
+    radial-gradient(ellipse at center, #ffb92a88 0%, transparent 65%);
+}
+.hero-board::after {
+  inset: -14% -10% 37%;
+  z-index: 1;
+  background: radial-gradient(ellipse at center, #ffbe386e, transparent 70%);
+}
+.hero-scene.is-animated .hero-slot:has(.hero-card)::before {
+  animation: hero-impact var(--deal-duration) linear var(--deal-delay) infinite
+    both;
+}
+.hero-scene.is-animated .hero-slot:has(.hero-card)::after {
+  animation: hero-sparks var(--deal-duration) linear var(--deal-delay) infinite
+    both;
+}
+.hero-scene.is-animated .hero-board::after {
+  animation: hero-burst var(--deal-duration) linear infinite both;
+}
+@keyframes hero-flight {
   0%,
-  14% {
-    transform: var(--fan-pose);
+  2% {
+    transform: translate(var(--approach-x), -64%) rotate(var(--lean))
+      scale(0.88);
+    opacity: 0;
+    animation-timing-function: var(--deal-ease-out);
+  }
+  14%,
+  29% {
+    transform: translate(var(--peel-x), -28%) rotate(var(--lean)) scale(1.48);
+    opacity: 1;
+  }
+  32% {
+    transform: translate(var(--peel-x), -32%) rotate(var(--lean)) scale(1.5);
+    opacity: 1;
+    animation-timing-function: var(--deal-ease-out);
+  }
+  36% {
+    transform: translate(var(--flight-x), -72%) rotate(calc(var(--lean) * -1.4))
+      scale(1.2);
     opacity: 1;
     animation-timing-function: var(--deal-ease-in-out);
   }
-  30% {
-    transform: translateY(2%) scale(0.982);
+  41% {
+    transform: translateY(4%) rotate(0) scale(1.08, 0.91);
     opacity: 1;
     animation-timing-function: var(--deal-ease-out);
   }
-  36%,
-  76% {
+  43% {
+    transform: translateY(-4%) rotate(0) scale(0.98, 1.02);
+    opacity: 1;
+  }
+  48%,
+  79% {
     transform: none;
     opacity: 1;
   }
-  86% {
-    transform: translateY(-10%) scale(0.97);
-    opacity: 0;
-  }
-  87%,
-  92% {
-    transform: var(--fan-pose);
-    opacity: 0;
-    animation-timing-function: var(--deal-ease-out);
-  }
+  90%,
   100% {
-    transform: var(--fan-pose);
+    transform: none;
+    opacity: 0;
+  }
+}
+@keyframes hero-peel {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  14% {
+    opacity: 1;
+    transform: translateX(0);
+    animation-timing-function: steps(24, end);
+  }
+  31% {
+    opacity: 1;
+    transform: translateX(-96%);
+    animation-timing-function: step-end;
+  }
+  32%,
+  100% {
+    opacity: 0;
+    transform: translateX(-96%);
+  }
+}
+@keyframes hero-face {
+  0% {
+    opacity: 0;
+  }
+  32%,
+  100% {
     opacity: 1;
   }
 }
-@keyframes hero-slot-lit {
+@keyframes hero-impact {
   0%,
-  28%,
-  56%,
+  39%,
+  57%,
   100% {
     opacity: 0;
   }
-  31% {
-    opacity: 0.95;
+  41% {
+    opacity: 1;
+    transform: scale(0.94);
   }
-  43% {
-    opacity: 0.25;
+  46% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+@keyframes hero-sparks {
+  0%,
+  40% {
+    opacity: 0;
+    transform: scale(0.42);
+  }
+  41% {
+    opacity: 1;
+    transform: scale(0.62);
+    animation-timing-function: var(--deal-ease-out);
+  }
+  51%,
+  100% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+@keyframes hero-burst {
+  0%,
+  48% {
+    opacity: 0;
+    transform: scale(0.68);
+  }
+  51% {
+    opacity: 0.85;
+    transform: scale(0.94);
+    animation-timing-function: var(--deal-ease-out);
+  }
+  65%,
+  100% {
+    opacity: 0;
+    transform: scale(1.24);
   }
 }
 .hero-motion {
@@ -352,7 +498,10 @@ html {
   margin-left: 2px;
 }
 .hero-scene.is-animated.is-paused .hero-card,
-.hero-scene.is-animated.is-paused .hero-slot:has(.hero-card)::before {
+.hero-scene.is-animated.is-paused .hero-card img,
+.hero-scene.is-animated.is-paused .hero-slot:has(.hero-card)::before,
+.hero-scene.is-animated.is-paused .hero-slot:has(.hero-card)::after,
+.hero-scene.is-animated.is-paused .hero-board::after {
   animation-play-state: paused;
 }
 .hero-copy {

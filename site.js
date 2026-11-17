@@ -1,4 +1,4 @@
-import { drawHero } from "./hero.js?v=card-deal";
+import { drawHero } from "./hero.js?v=peel-slam";
 
 const search = document.querySelector("#release-search");
 const list = document.querySelector("#release-list");

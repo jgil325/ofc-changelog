@@ -50,12 +50,14 @@ export function drawHero(canvas) {
 
   const button = scene.querySelector(".hero-motion");
   const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+  let ready = false;
   let paused = false;
   let inView = true;
   function sync() {
-    scene.classList.toggle("is-animated", !reduced.matches);
+    const animate = ready && !reduced.matches;
+    scene.classList.toggle("is-animated", animate);
     scene.classList.toggle("is-paused", paused || !inView);
-    button.hidden = reduced.matches;
+    button.hidden = !animate;
     button.dataset.paused = String(paused);
     button.setAttribute(
       "aria-label",
@@ -72,4 +74,14 @@ export function drawHero(canvas) {
     sync();
   }).observe(scene);
   sync();
+  Promise.all(
+    [...scene.querySelectorAll(".hero-card img")].map((card) => card.decode()),
+  )
+    .then(() => {
+      ready = true;
+      sync();
+    })
+    .catch(() => {
+      // The face-up board remains visible if any peel frame can't load.
+    });
 }
