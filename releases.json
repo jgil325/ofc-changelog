@@ -1,5 +1,19 @@
 [
   {
+    "id": "scoop-wins-by-foul",
+    "date": "2026-11-17",
+    "releasedAt": "2026-11-17T20:58:17Z",
+    "title": "Foul wins get the scoop celebration",
+    "category": "Fixes",
+    "summary": "Win by foul and you’ll see the SCOOP! animation at showdown.",
+    "notes": [
+      "Heads-up foul wins get the full-screen reveal.",
+      "At three-handed tables, the animation plays on the fouled board if it’s the only opponent you scoop. Scoop both opponents for the full-screen reveal."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
     "id": "scoop-at-showdown",
     "date": "2026-11-17",
     "releasedAt": "2026-11-17T19:19:02Z",
