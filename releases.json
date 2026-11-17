@@ -1,0 +1,737 @@
+[
+  {
+    "id": "scoop-at-showdown",
+    "date": "2026-11-17",
+    "releasedAt": "2026-11-17T19:19:02Z",
+    "title": "The scoop gets its moment",
+    "category": "Gameplay",
+    "summary": "A gold wipe and a big SCOOP! reveal celebrate winning every comparison at showdown.",
+    "notes": [
+      "At three-handed tables, a single scoop plays inside the swept player’s board so the rest of the table stays visible.",
+      "Heads-up scoops and sweeping both opponents get a full-screen reveal.",
+      "Reduce Motion keeps the regular score reveal."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "river-notifications-and-tables",
+    "date": "2026-11-17",
+    "releasedAt": "2026-11-17T18:49:56Z",
+    "title": "A better river and faster table switching",
+    "category": "Gameplay",
+    "summary": "River peels, push alerts and table navigation are easier to use.",
+    "notes": [
+      "Tap any unpeeled D5 slot. Opponents see numbered peel progress while unrevealed cards stay private.",
+      "Push alerts add chat previews, player names, turn context, Fantasyland card counts and repeat streaks, and final point summaries.",
+      "Opening the app clears delivered alerts. Swipe up to dismiss a compact chat banner.",
+      "Table swipes wrap in both directions. Ended tables can be archived with a swipe on Play.",
+      "Quick heads-up, Friends night and Slow burn are back. Street labels now read Open, D2, D3, D4 and D5.",
+      "Fantasyland opening props pay after the natural players finish. When multiple boards are in Fantasyland, the award waits for settlement.",
+      "Showdown reveals row scores in stages, emphasizes scoops and swings of at least 30 points, and puts OFC points above props."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "restore-current-table-update",
+    "date": "2026-11-14",
+    "releasedAt": "2026-11-15T00:43:15Z",
+    "title": "Restore the current table update",
+    "category": "Fixes",
+    "summary": "A corrective OTA restored the current table experience on beta and production.",
+    "notes": [
+      "Restored game colors, middle-row bands, river squeeze, discard visibility and the account-level Sweat setting after an older update briefly went out."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "easier-sweat-gesture",
+    "date": "2026-11-14",
+    "releasedAt": "2026-11-15T00:36:37Z",
+    "title": "A stronger, easier-to-grab sweat",
+    "category": "Gameplay",
+    "summary": "The opening-card sweat is easier to hold and gives stronger feedback.",
+    "notes": [
+      "Expanded the touch target, supported two-finger peels and strengthened haptics.",
+      "A later update the same day restored the current table release after this older build briefly went out."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "middle-row-bands",
+    "date": "2026-11-14",
+    "releasedAt": "2026-11-14T23:04:31Z",
+    "title": "A middle-row band where scoring differs",
+    "category": "Gameplay",
+    "summary": "The colored band identifies variants where the middle row is scored differently.",
+    "notes": [
+      "Standard High tables no longer show the middle-row band.",
+      "Game identity stays visible in the table title."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "variant-colors-and-squeeze",
+    "date": "2026-11-14",
+    "releasedAt": "2026-11-14T21:59:13Z",
+    "title": "A clearer table for every game",
+    "category": "Gameplay",
+    "summary": "Game colors, river squeeze and showdown details make variants easier to recognize and play.",
+    "notes": [
+      "Each game has a color and a shape cue.",
+      "Hold the river cards to squeeze them, or tap for an instant reveal.",
+      "See a force-busted player’s discards at showdown.",
+      "Sweat the last card is now an account-wide preference."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "opening-card-sweat",
+    "date": "2026-11-13",
+    "releasedAt": "2026-11-13T20:55:09Z",
+    "title": "Sweat the last opening card",
+    "category": "Gameplay",
+    "summary": "Peel the last opening card when the first four put you one card away from a first-five prop.",
+    "notes": [
+      "The optional reveal adds suspense while keeping the existing deal and prop results."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "badeucey-seven-high",
+    "date": "2026-11-13",
+    "releasedAt": "2026-11-13T18:34:53Z",
+    "title": "More ways into Badeucey Fantasyland",
+    "category": "Gameplay",
+    "summary": "Any qualifying 7-high low in the middle now earns Fantasyland.",
+    "notes": [
+      "Older tables and completed hands keep the rules they were dealt with."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "swap-placed-cards",
+    "date": "2026-11-13",
+    "releasedAt": "2026-11-13T18:12:51Z",
+    "title": "Swap cards already on your board",
+    "category": "Gameplay",
+    "summary": "Reposition placed cards directly and keep tap placement moving in tray order.",
+    "notes": [
+      "Tap placement advances according to the tray, including in Taiwanese Poker.",
+      "Removed the Escalator hint from the table."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "quiet-draft-notices",
+    "date": "2026-11-13",
+    "releasedAt": "2026-11-13T17:05:25Z",
+    "title": "A quieter table after a quick Set",
+    "category": "Fixes",
+    "summary": "A fast pre-set no longer leaves a false draft notice behind.",
+    "notes": [
+      "Accepted placements clear the draft feedback when the hand advances."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "high-label",
+    "date": "2026-11-13",
+    "releasedAt": "2026-11-13T16:43:50Z",
+    "title": "High Pineapple is now labeled High",
+    "category": "Gameplay",
+    "summary": "The app now calls the regular high game “High.”",
+    "notes": [
+      "The label is consistent in setup, the table and the game guide. Existing rules and results carry forward."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "table-polish",
+    "date": "2026-11-12",
+    "releasedAt": "2026-11-13T04:50:51Z",
+    "title": "A smoother table from deal to showdown",
+    "category": "Design",
+    "summary": "A broad pass on cards, table navigation, friends, and accessibility.",
+    "notes": [
+      "Shared motion and haptic feedback make presses, turns, Set and timers feel consistent.",
+      "Placed cards travel to their slots. Drag hover highlights illegal rows and snap-back follows the card’s momentum.",
+      "Showdown reveals row results in sequence and counts up the score.",
+      "Known tables open faster. The deck stays available when switching, and failing polls back off.",
+      "Drafts save after a short pause. Play loads cached tables and shows a waiting count on its tab.",
+      "Added clearer loading skeletons and Retry actions, instant preference feedback and sign-out confirmation.",
+      "Friend actions stay in place, and invitations remember the friend you selected.",
+      "Improved autofill, paste, keyboard return keys, larger text, screen-reader labels and contrast.",
+      "Close buttons use sheets and back gestures protect multi-step flows."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "larger-first-five-reveal",
+    "date": "2026-11-10",
+    "releasedAt": "2026-11-10T17:19:21Z",
+    "title": "A bigger Fantasyland first five",
+    "category": "Design",
+    "summary": "The first-five reveal uses larger cards and a more prominent Next button.",
+    "notes": ["The reveal is easier to read before you move on to placement."],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "edit-dealers-choice",
+    "date": "2026-11-09",
+    "releasedAt": "2026-11-09T16:26:37Z",
+    "title": "Edit your Dealer’s Choice rotation",
+    "category": "Gameplay",
+    "summary": "Hosts can change the approved game rotation on an existing table.",
+    "notes": ["The table’s next eligible deals use the saved rotation."],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "table-settings-and-first-five",
+    "date": "2026-11-07",
+    "releasedAt": "2026-11-08T01:55:57Z",
+    "title": "Table settings and the Fantasyland first five",
+    "category": "Gameplay",
+    "summary": "Review setup choices and see the original five cards in Fantasyland.",
+    "notes": [
+      "The game’s first-five view makes opening-card decisions and props easier to verify."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "first-five-props",
+    "date": "2026-11-06",
+    "releasedAt": "2026-11-07T02:23:27Z",
+    "title": "High, Low and Blackjack props",
+    "category": "Gameplay",
+    "summary": "Add optional points-only props to the first five cards.",
+    "notes": [
+      "High, Low and Blackjack evaluate independently, and eligible props can stack.",
+      "Opening prop points and regular hand scores remain distinct."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 8
+  },
+  {
+    "id": "google-in-app",
+    "date": "2026-11-06",
+    "releasedAt": "2026-11-06T05:35:52Z",
+    "title": "Sign in with Google inside the app",
+    "category": "Gameplay",
+    "summary": "Production users on a compatible iPhone runtime can sign in with Google from inside OFC.",
+    "notes": [],
+    "channels": ["production"],
+    "updateGroups": 1
+  },
+  {
+    "id": "ten-on-card-faces",
+    "date": "2026-11-05",
+    "releasedAt": "2026-11-05T17:32:02Z",
+    "title": "Bring back 10 on card faces",
+    "category": "Design",
+    "summary": "Ten-rank cards display “10” on their face again.",
+    "notes": ["The card remains the same rank in play and scoring."],
+    "channels": ["beta", "production"],
+    "updateGroups": 7
+  },
+  {
+    "id": "table-stats-and-jokers",
+    "date": "2026-11-05",
+    "releasedAt": "2026-11-05T05:18:05Z",
+    "title": "Table stats and clearer Joker results",
+    "category": "Gameplay",
+    "summary": "See table statistics and Fantasyland frequency, with clearer hand labels when Jokers are used.",
+    "notes": ["Result labels reflect the hand that was actually evaluated."],
+    "channels": ["beta", "production"],
+    "updateGroups": 7
+  },
+  {
+    "id": "center-the-tray",
+    "date": "2026-10-28",
+    "releasedAt": "2026-10-28T21:49:38Z",
+    "title": "A centered card tray",
+    "category": "Design",
+    "summary": "The fixed tray is centered across the table and the divider is gone.",
+    "notes": ["Tap and drop placement use the same centered layout."],
+    "channels": ["beta", "production"],
+    "updateGroups": 7
+  },
+  {
+    "id": "high-kicker-fouls",
+    "date": "2026-10-27",
+    "releasedAt": "2026-10-27T15:36:11Z",
+    "title": "Score high-row kickers correctly",
+    "category": "Fixes",
+    "summary": "High-row foul checks now use the correct kickers.",
+    "notes": [
+      "Opponent result details display the kickers used in evaluation."
+    ],
+    "channels": ["beta", "production"],
+    "updateGroups": 7
+  },
+  {
+    "id": "stable-table-and-fantasyland",
+    "date": "2026-10-26",
+    "releasedAt": "2026-10-26T23:42:19Z",
+    "title": "Steadier tables and wider Fantasyland cards",
+    "category": "Design",
+    "summary": "The board, tray and Set controls stay in stable positions as a hand advances.",
+    "notes": ["Fantasyland uses larger cards across the available width."],
+    "channels": ["beta", "production"],
+    "updateGroups": 7
+  },
+  {
+    "id": "untimed-and-full-settings",
+    "date": "2026-10-23",
+    "releasedAt": "2026-10-23T21:06:02Z",
+    "title": "Untimed by default, with full table settings",
+    "category": "Gameplay",
+    "summary": "New tables start untimed unless you choose a timer.",
+    "notes": [
+      "Creation shows the full settings before you start.",
+      "The card tray has a cleaner layout with a full-height Set button."
+    ],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "set-after-dealers-choice",
+    "date": "2026-10-23",
+    "releasedAt": "2026-10-23T16:19:09Z",
+    "title": "Choose the game and set your cards",
+    "category": "Gameplay",
+    "summary": "The Dealer’s Choice picker closes straight into placement.",
+    "notes": [
+      "Drag and Set the opening hand immediately. The table submits it in the normal turn order."
+    ],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "animated-invites",
+    "date": "2026-10-23",
+    "releasedAt": "2026-10-23T15:55:18Z",
+    "title": "Animated OFC invitations",
+    "category": "Design",
+    "summary": "Shared table links open a short animated OFC preview.",
+    "notes": ["Open in OFC takes the recipient to the invitation in the app."],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "adaptive-dealers-choice-and-taiwanese",
+    "date": "2026-10-23",
+    "releasedAt": "2026-10-23T15:27:46Z",
+    "title": "A better Dealer’s Choice and Taiwanese table",
+    "category": "Design",
+    "summary": "The Dealer’s Choice picker fits the current table and Taiwanese hand scores sit inline.",
+    "notes": ["Passive player avatars keep the table focused on play."],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "dealers-choice-toggle",
+    "date": "2026-10-23",
+    "releasedAt": "2026-10-23T05:38:08Z",
+    "title": "Dealer’s Choice gets a setup toggle",
+    "category": "Gameplay",
+    "summary": "Choose Dealer’s Choice directly when creating a table.",
+    "notes": ["Select the eligible games before the table is created."],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "compact-taiwanese-table",
+    "date": "2026-10-21",
+    "releasedAt": "2026-10-21T20:57:44Z",
+    "title": "A compact Taiwanese table",
+    "category": "Design",
+    "summary": "Taiwanese tables use the shared OFC timer, inline scores and roomier player boards.",
+    "notes": [
+      "The total stays beside your seat and pair scores stay close to the cards."
+    ],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "fantasyland-fixed-slots",
+    "date": "2026-10-21",
+    "releasedAt": "2026-10-21T18:07:19Z",
+    "title": "Fixed Fantasyland slots and covered discards",
+    "category": "Design",
+    "summary": "Fantasyland cards stay in their slots while other cards move onto the board.",
+    "notes": ["Discard faces are fully opaque."],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "fantasyland-stable-slots",
+    "date": "2026-10-21",
+    "releasedAt": "2026-10-21T17:59:09Z",
+    "title": "Keep each Fantasyland card in its slot",
+    "category": "Fixes",
+    "summary": "Moving a card onto the board preserves the positions of the other cards in the rack.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 1
+  },
+  {
+    "id": "fantasyland-set-dock",
+    "date": "2026-10-21",
+    "releasedAt": "2026-10-21T17:46:31Z",
+    "title": "A larger Fantasyland board and a fixed Set button",
+    "category": "Design",
+    "summary": "The board holds its size during placement and Set stays on the right.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "taiwanese-drag-every-card",
+    "date": "2026-10-20",
+    "releasedAt": "2026-10-21T01:07:13Z",
+    "title": "Drag every card in the Taiwanese rack",
+    "category": "Fixes",
+    "summary": "Cards throughout the Taiwanese rack can be dragged into place.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "fantasyland-sizing-taiwanese-set",
+    "date": "2026-10-20",
+    "releasedAt": "2026-10-21T00:48:23Z",
+    "title": "Steady Fantasyland sizing and quicker Taiwanese Set",
+    "category": "Design",
+    "summary": "Fantasyland keeps the same board size throughout your turn.",
+    "notes": [
+      "Taiwanese gets immediate setting and familiar OFC table controls."
+    ],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "reveal-recovery-and-lobbies",
+    "date": "2026-10-20",
+    "releasedAt": "2026-10-20T23:19:56Z",
+    "title": "Reliable reveal and Set recovery",
+    "category": "Fixes",
+    "summary": "Recover from interrupted OFC reveals and Set attempts.",
+    "notes": ["Game variants now use one shared lobby experience."],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "taiwanese-launch",
+    "date": "2026-10-20",
+    "releasedAt": "2026-10-20T22:40:44Z",
+    "title": "Taiwanese Poker comes to OFC",
+    "category": "Gameplay",
+    "summary": "Play Taiwanese Poker with two or three players across four variants.",
+    "notes": ["The release reached the existing beta installer families."],
+    "channels": ["beta"],
+    "updateGroups": 5
+  },
+  {
+    "id": "board-alignment",
+    "date": "2026-10-19",
+    "releasedAt": "2026-10-20T03:31:40Z",
+    "title": "Larger, better-aligned opponent boards",
+    "category": "Design",
+    "summary": "Opponent cards grow and align more neatly across the table.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 4
+  },
+  {
+    "id": "lighter-table-sync",
+    "date": "2026-10-19",
+    "releasedAt": "2026-10-20T02:58:24Z",
+    "title": "Lighter table and chat sync",
+    "category": "Fixes",
+    "summary": "Reduced unnecessary polling and chat refresh work while keeping tables current.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 4
+  },
+  {
+    "id": "fit-all-players",
+    "date": "2026-10-19",
+    "releasedAt": "2026-10-20T02:48:49Z",
+    "title": "Fit every player on screen",
+    "category": "Design",
+    "summary": "Board layout fits all players more comfortably and completed-hand labels stay visible.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 4
+  },
+  {
+    "id": "bright-game-picker",
+    "date": "2026-10-19",
+    "releasedAt": "2026-10-19T23:28:05Z",
+    "title": "Keep cards bright during game selection",
+    "category": "Design",
+    "summary": "Opening cards remain clear when choosing the game at a Dealer’s Choice table.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 3
+  },
+  {
+    "id": "stable-selection-and-contacts",
+    "date": "2026-10-19",
+    "releasedAt": "2026-10-19T23:03:06Z",
+    "title": "Steadier game selection and optional contacts",
+    "category": "Gameplay",
+    "summary": "Improved Dealer’s Choice selection and the “No Badugi” label.",
+    "notes": ["Compatible beta builds added optional contact discovery."],
+    "channels": ["beta"],
+    "updateGroups": 4
+  },
+  {
+    "id": "practice-back",
+    "date": "2026-10-19",
+    "releasedAt": "2026-10-19T18:13:39Z",
+    "title": "Easier back navigation from practice",
+    "category": "Fixes",
+    "summary": "Back exits a practice table even when you’re signed out.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "new-faces-and-boards",
+    "date": "2026-10-19",
+    "releasedAt": "2026-10-19T16:20:55Z",
+    "title": "New card faces and roomier boards",
+    "category": "Design",
+    "summary": "Refreshed card faces, balanced Fantasyland trays and separate three-player boards.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "clearer-guide-and-alerts",
+    "date": "2026-10-19",
+    "releasedAt": "2026-10-19T15:08:28Z",
+    "title": "A clearer game guide and better next-hand alerts",
+    "category": "Gameplay",
+    "summary": "The guide, action badges, Dealer’s Choice drafts and next-hand notifications are easier to follow.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "full-boards-next-hand",
+    "date": "2026-10-17",
+    "releasedAt": "2026-10-18T00:33:48Z",
+    "title": "Full boards and a visible Next hand button",
+    "category": "Design",
+    "summary": "Finished boards and Next hand fit together on the results screen.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "stable-table-dock",
+    "date": "2026-10-17",
+    "releasedAt": "2026-10-17T22:18:37Z",
+    "title": "A table dock that stays put",
+    "category": "Design",
+    "summary": "The dock no longer changes height as the available actions change.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "tap-to-reveal",
+    "date": "2026-10-17",
+    "releasedAt": "2026-10-17T21:57:38Z",
+    "title": "Tap cards to reveal",
+    "category": "Gameplay",
+    "summary": "Tap opening cards to reveal them. A compact dock leaves more room for the board.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "photos-and-swipes",
+    "date": "2026-10-17",
+    "releasedAt": "2026-10-17T20:03:11Z",
+    "title": "Profile photos and full-table swipes",
+    "category": "Gameplay",
+    "summary": "Show a profile photo and swipe across the full table to switch games.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "readable-table-names",
+    "date": "2026-10-17",
+    "releasedAt": "2026-10-17T19:37:08Z",
+    "title": "Readable tables and Fantasyland selection",
+    "category": "Design",
+    "summary": "Table names are easier to read and Fantasyland selection is clearer in the tray.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "direct-table-picker",
+    "date": "2026-10-17",
+    "releasedAt": "2026-10-17T19:27:17Z",
+    "title": "Switch tables directly",
+    "category": "Gameplay",
+    "summary": "Switch tables with a smoother swipe or jump straight to one using the table picker.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "october-beta-gameplay",
+    "date": "2026-10-17",
+    "releasedAt": "2026-10-17T18:49:00Z",
+    "title": "More ways to play your turn",
+    "category": "Gameplay",
+    "summary": "Early viewing, presets, table navigation, chat and undo arrived together.",
+    "notes": [
+      "Players can view eligible cards early and use the improved turn controls."
+    ],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "unread-table-chat",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-17T00:43:17Z",
+    "title": "An unread dot for table chat",
+    "category": "Gameplay",
+    "summary": "A red dot lets you spot unread table messages before opening chat.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "layout-notifications-sheets",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-17T00:08:26Z",
+    "title": "Table layout, alerts and draggable sheets",
+    "category": "Design",
+    "summary": "The table is easier to read, notifications are more reliable, and sheets can be dragged.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "google-callback-recovery",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T23:34:10Z",
+    "title": "Recover Google sign-in after a callback",
+    "category": "Fixes",
+    "summary": "A more reliable return from Google sign-in helps the app restore your session.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "dealers-choice-fantasyland",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T20:35:43Z",
+    "title": "Keep the chosen game through Fantasyland",
+    "category": "Fixes",
+    "summary": "A Dealer’s Choice hand retains its selected variant through Fantasyland.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "dealer-preview-turn",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T19:58:17Z",
+    "title": "Show the game preview when your turn starts",
+    "category": "Fixes",
+    "summary": "The Dealer’s Choice game preview waits for Start your turn.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "faster-table-loading",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T19:11:55Z",
+    "title": "Fix slow table loading",
+    "category": "Fixes",
+    "summary": "Fixed a push-registration loop that could delay opening a table.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "iphone-ota-verification",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T18:49:20Z",
+    "title": "Verified iPhone beta update",
+    "category": "Fixes",
+    "summary": "Verified delivery of the iPhone beta update.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 1
+  },
+  {
+    "id": "themed-restart",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T18:45:49Z",
+    "title": "A restart prompt that looks like OFC",
+    "category": "Design",
+    "summary": "The update-ready prompt uses OFC’s shared dialog and yellow Restart button.",
+    "notes": ["Includes the reviewed Fantasyland fixes."],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "restart-verification",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T18:24:48Z",
+    "title": "Restart prompt beta verification",
+    "category": "Fixes",
+    "summary": "The update-ready prompt was verified across the beta installer families.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 3
+  },
+  {
+    "id": "required-restart",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T18:13:28Z",
+    "title": "Restart to apply a downloaded update",
+    "category": "Gameplay",
+    "summary": "OFC now offers Restart when a compatible update is ready to load.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  },
+  {
+    "id": "friends-beta",
+    "date": "2026-10-16",
+    "releasedAt": "2026-10-16T17:59:00Z",
+    "title": "The first over-the-air beta",
+    "category": "Gameplay",
+    "summary": "OTA-enabled beta installers can download compatible app updates in the background.",
+    "notes": [],
+    "channels": ["beta"],
+    "updateGroups": 2
+  }
+]

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#141619" />
+    <meta
+      name="description"
+      content="The release history for OFC Mobile. See what's new at the table."
+    />
+    <title>Changelog · OFC Mobile</title>
+    <link rel="icon" href="./assets/ofc.png" />
+    <link
+      rel="preload"
+      href="./assets/barlow-condensed-extra-bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#releases">Skip to release notes</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="./" aria-label="OFC Mobile changelog">
+          <img src="./assets/ofc.png" width="34" height="34" alt="" />
+          <span>OFC <span class="wordmark-muted">MOBILE</span></span>
+        </a>
+        <nav aria-label="Main">
+          <a href="#releases" aria-current="page">Changelog</a>
+          <a href="https://api-production-5b6e9.up.railway.app/support"
+            >Support <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <canvas class="hero-art" aria-hidden="true"></canvas>
+        <div class="wrap hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> THE RELEASE LOG</p>
+            <h1 id="page-title">OFC <em>Changelog.</em></h1>
+            <p class="hero-description">
+              New games, better tables, and the small fixes that make every hand
+              play smoother.
+            </p>
+            <a class="hero-link" href="#releases"
+              >Explore releases <span aria-hidden="true">↓</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="wrap archive"
+        id="releases"
+        aria-labelledby="releases-title"
+      >
+        <div class="archive-header">
+          <div>
+            <p class="eyebrow archive-eyebrow" id="archive-count">
+              OTA HISTORY
+            </p>
+            <h2 id="releases-title">Release history</h2>
+          </div>
+          <label class="search">
+            <span class="sr-only">Search releases</span>
+            <span class="search-icon" aria-hidden="true"></span>
+            <input
+              id="release-search"
+              type="search"
+              placeholder="Search releases"
+              autocomplete="off"
+            />
+            <kbd aria-hidden="true">/</kbd>
+          </label>
+        </div>
+        <div class="filters" aria-label="Filter by category" role="group">
+          <button type="button" data-filter="All" aria-pressed="true">
+            All updates
+          </button>
+          <button type="button" data-filter="Gameplay" aria-pressed="false">
+            Gameplay
+          </button>
+          <button type="button" data-filter="Design" aria-pressed="false">
+            Design
+          </button>
+          <button type="button" data-filter="Fixes" aria-pressed="false">
+            Fixes
+          </button>
+        </div>
+        <p class="sr-only" id="search-results" role="status"></p>
+        <div id="release-list" class="release-list" aria-busy="true">
+          <p class="empty-state">Loading release notes…</p>
+        </div>
+        <noscript
+          ><p>Enable JavaScript to read the release history.</p></noscript
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <a class="wordmark" href="./"
+          ><img src="./assets/ofc.png" width="32" height="32" alt="" /><span
+            >OFC <span class="wordmark-muted">MOBILE</span></span
+          ></a
+        >
+        <a href="#page-title">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
