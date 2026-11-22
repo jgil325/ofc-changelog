@@ -12,7 +12,7 @@ const releaseDate = new Intl.DateTimeFormat("en-US", {
   timeZone: "UTC",
 });
 
-const channelLabels = { beta: "Beta", production: "Production" };
+const channelLabels = { beta: "Beta", production: "Production", web: "Web" };
 const normalize = (value) => value.toLocaleLowerCase().replaceAll("’", "'");
 const expanded = new Set();
 let releases = [];
@@ -61,6 +61,11 @@ function releaseRow(release) {
     detail.append(notes);
   }
   const links = element("div", "release-links");
+  if (release.link) {
+    const link = element("a", "", release.link.label);
+    link.href = release.link.url;
+    links.append(link);
+  }
   const permalink = element("a", "", "Link to release");
   permalink.href = `#${release.id}`;
   links.append(permalink);
@@ -122,7 +127,7 @@ async function initialize() {
         ].join(" "),
       ),
     }));
-    archiveCount.textContent = `${releases.length} OTA RELEASES`;
+    archiveCount.textContent = `${releases.length} RELEASES`;
     if (releases[0]) expanded.add(releases[0].id);
     render();
     openLinkedRelease();

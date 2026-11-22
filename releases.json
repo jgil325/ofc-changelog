@@ -1,5 +1,22 @@
 [
   {
+    "id": "play-ofc-in-your-browser",
+    "date": "2026-11-22",
+    "releasedAt": "2026-11-22T19:25:17Z",
+    "title": "Play OFC in your browser",
+    "category": "Gameplay",
+    "summary": "Start a hand on your phone and finish it on your computer. Sign in with the same Apple or Google account to see your tables.",
+    "notes": [
+      "Your saved card placements carry over when you switch devices. Table chat and turns update live."
+    ],
+    "link": {
+      "label": "Play OFC in your browser",
+      "url": "https://playofc.up.railway.app/"
+    },
+    "channels": ["web"],
+    "updateGroups": 0
+  },
+  {
     "id": "scoop-hold-and-return",
     "date": "2026-11-17",
     "releasedAt": "2026-11-17T22:35:22Z",
